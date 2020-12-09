@@ -2,6 +2,10 @@ Compiled mksh without AFL and the crash from the fuzzer still causes segmentatio
 Ubuntu 20.04 LTS x64
 
 
+Mksh version R59
+
+src/lex.c: line 116(I rewrote the macro as inline so I could debug it)
+
 ```
 static inline o_getsc_r(int carg){
     118	 	int cev = carg;
