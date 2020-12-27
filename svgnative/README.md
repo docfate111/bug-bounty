@@ -10,4 +10,4 @@ The files in crashes/testC were passed as arguments to build/linux/test/testC/te
 The bug was that .get() was called on a  std::unique_ptr<SVGNative::SVGDocument> and it returned 0x0. Then the address was dereferenced causing a segmentation fault.
 
 # testText
-
+Passing crash as argument to SVGNative causes a null pointer dereference since indexing an empty vector at 0 returns a null pointer.
