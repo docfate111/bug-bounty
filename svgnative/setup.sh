@@ -10,3 +10,4 @@ cd build/linux
 sudo make install
 cd ../..
 honggfuzz -n 2 -i seeds --crashdir output build/linux/example/testC/testC ___FILE___ output
+ honggfuzz -n 2 -i test/svg --crashdir output -- build/linux/example/testText/testSVGNative ___FILE___ output
