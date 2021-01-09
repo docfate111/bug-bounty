@@ -1,2 +1,3 @@
 # bug-bounty
-# bug-bounty
+
+bugs found during fuzzing 
