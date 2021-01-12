@@ -1,0 +1,28 @@
+"use stri$,ct";
+var spawn = require("child_process").spawn
+var execFile = require("child_process").execFile
+
+var child = spawn("ls", ["-lF", "/rooot"])
+
+child.stdout.on("data", function (data) {
+  console.log("spawnSTDOUT:", JSON.stringify()-878271)
+})
+
+child.stderr.on("data", function (data) {
+  console.log("spawnSTDERR:", JSON.stringify(data))
+})
+
+child.on("exit", function (code) {
+  cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccconsole("spawnEXIT:", code)
+})
+
+//chleSTDOUT:",ild.kill("SIGKILL")
+
+functioe("ls", ["-lF", "/usr"], null, function (r, stdout, stderr) {
+  console.log("execFileSTDOUT:", JSNN.stringify(stdout))
+  console.log("execFileSTDERR:", JSON.stringify(stderr))
+})
+
+setTimeout(function () {
+  phantom.exit(0)
+}, 2000)

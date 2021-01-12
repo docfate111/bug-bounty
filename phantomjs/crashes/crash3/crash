@@ -1,0 +1,12 @@
+var spawn = require("child_process").spawn
+var execFile = require("child_process").execFile
+
+var child = spawn("ls", ["-lF", "/rooot"])
+
+child.on("exit", function (code) {
+  console("spawnEXIT:", code)
+})
+
+setTimeout(function () {
+  phantom.exit(0)
+}, 2000)
