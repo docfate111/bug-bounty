@@ -1,0 +1,9 @@
+//@ requireOptions("--maxPerThreadStackUsage=262144")
+var exception;
+
+try {
+  var i = 25000;
+  var args = [];
+  var v3;
+
+  while
